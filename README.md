@@ -57,28 +57,48 @@ To check for the latest hotpatch updates, you can either enable **Periodic Asses
 
 Hotpatching requires certain preconditions to be met, including the activation of Virtualization-based security (VBS).
 
-    1. VBS must be enabled for hotpatching to work. In the image shown above, VBS is currently disabled, and hotpatching will remain unavailable until VBS is turned on.
+1. VBS must be enabled for hotpatching to work. In the image shown above, VBS is currently disabled, and hotpatching will remain unavailable until VBS is turned on.
     
-    2. The VBS Status updates approximately every 5 minutes. Use the refresh option to check the latest status updates.
+2. The VBS Status updates approximately every 5 minutes. Use the refresh option to check the latest status updates.
 
     
   ![image](https://github.com/user-attachments/assets/388f1340-fefd-4dcd-9a37-9db4f2c3629f)
 
 You can verify these features are supported on your machine by running the following command in PowerShell:
+
 ```
     Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
 ```
 
-   ![image](https://github.com/user-attachments/assets/d8ffd558-9c5f-475a-a423-004739b444ab)
+
+  ![image](https://github.com/user-attachments/assets/f294190d-14eb-4bdb-8101-60b2b1f87259)
+
    
  The Windows Hypervisor Platform feature is currently disabled on my system.
  
 To enable the Windows Hypervisor Platform and proceed with enabling Virtualization-Based Security (VBS) for hotpatching, open PowerShell with elevated privileges and type the following command in PowerShell to enable the Hypervisor Platform:
+
    
 ```
    Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform -All
 ```
-You can install hotpatch (preview) updates by creating a user-defined schedule or performing a one-time update. There are two options:
+
+
+ ![image](https://github.com/user-attachments/assets/b6ed7b64-d69f-4a29-8d25-d023dd9b83e8)
+
+ 
+
+You can verify again if enabled by running the previous command in PowerShell:
+
+```
+    Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
+```
+
+
+![image](https://github.com/user-attachments/assets/f610e0d0-d153-4019-8c1f-10c724d002d3)
+
+
+You can now install hotpatch (preview) updates by creating a user-defined schedule or performing a one-time update. There are two options:
 
 1. Install all available update classifications or limit the installation to security updates only.
 2. Specify individual hotpatch knowledge base IDs (KB IDs) if you need to install specific updates. You can enter multiple KB IDs for this process.
