@@ -53,6 +53,31 @@ To check for the latest hotpatch updates, you can either enable **Periodic Asses
 
 ## Installing Hotpatch Updates
 
+**Hotpatch Requirements**
+
+Hotpatching requires certain preconditions to be met, including the activation of Virtualization-based security (VBS).
+
+    1. VBS must be enabled for hotpatching to work. In the image shown above, VBS is currently disabled, and hotpatching will remain unavailable until VBS is turned on.
+    
+    2. The VBS Status updates approximately every 5 minutes. Use the refresh option to check the latest status updates.
+
+    
+  ![image](https://github.com/user-attachments/assets/388f1340-fefd-4dcd-9a37-9db4f2c3629f)
+
+You can verify these features are supported on your machine by running the following command in PowerShell:
+```
+    Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
+```
+
+   ![image](https://github.com/user-attachments/assets/d8ffd558-9c5f-475a-a423-004739b444ab)
+   
+ The Windows Hypervisor Platform feature is currently disabled on my system.
+ 
+To enable the Windows Hypervisor Platform and proceed with enabling Virtualization-Based Security (VBS) for hotpatching, open PowerShell with elevated privileges and type the following command in PowerShell to enable the Hypervisor Platform:
+   
+```
+   Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform -All
+```
 You can install hotpatch (preview) updates by creating a user-defined schedule or performing a one-time update. There are two options:
 
 1. Install all available update classifications or limit the installation to security updates only.
