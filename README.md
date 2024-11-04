@@ -21,7 +21,14 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Navigate to **Azure Update Manager**.
+
+  ![image](https://github.com/user-attachments/assets/191199c5-5916-4148-88f5-6f695189473f)
+
+  
 3. Under **Resources**, select **Machines**, then choose the specific Arc-enabled machine.
+
+   ![image](https://github.com/user-attachments/assets/ab144491-7d8a-49a7-a103-892513c9e16b)
+
 4. In the **Arc-enabled machine | Updates** page, under the **Recommended updates** section, you will see the Hotpatch status for your virtual machine (VM).
 
 ### Hotpatch Statuses
@@ -32,6 +39,10 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
 | **Canceled**     | License has been canceled on the machine.                            |
 | **Disabled**     | License is enrolled, but the machine is disabled for updates.         |
 | **Pending**      | Interim status while enrollment is in progress.                      |
+
+
+ ![image](https://github.com/user-attachments/assets/68aa57b3-6301-4d9e-8637-4ac9105dc6a9)
+
 
 ## Checking Hotpatch Updates
 
