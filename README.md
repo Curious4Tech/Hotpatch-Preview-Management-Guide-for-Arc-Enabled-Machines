@@ -166,10 +166,6 @@ You can now install hotpatch (preview) updates by creating a **user-defined sche
 
 This process ensures that the hotpatch update, which does not require a reboot, is installed as part of your defined schedule or in a one-time update, making patch installation predictable.
 
-
-![image](https://github.com/user-attachments/assets/fb8aacad-10a4-4d60-b7b6-9421dc9777f9)
-
-
 To check for the latest hotpatch updates, you can either enable **Periodic Assessment** or manually trigger an on-demand assessment:
 
 1. **Periodic Assessment**: Automatically checks for available updates, ensuring that all patches are detected. The results can be viewed on the **Recommended updates** tab, along with the time of the last assessment.
