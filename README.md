@@ -27,7 +27,8 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
   
 3. Under **Resources**, select **Machines**, then choose the specific Arc-enabled machine.
 
-   ![image](https://github.com/user-attachments/assets/ab144491-7d8a-49a7-a103-892513c9e16b)
+  ![image](https://github.com/user-attachments/assets/71e37127-730e-48c9-b80c-f87da4d1317e)
+
 
 4. In the **Arc-enabled machine | Updates** page, under the **Recommended updates** section, you will see the Hotpatch status for your virtual machine (VM).
 
