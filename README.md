@@ -164,7 +164,8 @@ You can now install hotpatch (preview) updates by creating a **user-defined sche
 This process ensures that the hotpatch update, which does not require a reboot, is installed as part of your defined schedule or in a one-time update, making patch installation predictable.
 
 
-![image](https://github.com/user-attachments/assets/85cecf11-a1b1-4257-bdca-83367cf77e21)
+ ![image](https://github.com/user-attachments/assets/f4ea60ac-7db7-46fa-b57a-6815ae7ba5de)
+
 
 ## Viewing Update History
 
