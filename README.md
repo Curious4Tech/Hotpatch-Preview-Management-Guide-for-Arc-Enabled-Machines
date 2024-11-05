@@ -136,6 +136,9 @@ Get-ComputerInfo -Property "HyperV*"
 ![image](https://github.com/user-attachments/assets/11c8a9b6-4a4b-4a6c-9b53-a3bcfd82906f)
 
 
+
+Restart your computer after making these changes.
+
 Now, return to the Azure Portal and locate the Hotpatch option. Click on **Change** next to Hotpatch. A new window will appear—review the details, and then click on **Confirm** to activate Hotpatch.
 
 
