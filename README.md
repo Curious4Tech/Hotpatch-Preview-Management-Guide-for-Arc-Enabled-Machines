@@ -22,7 +22,7 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Navigate to **Azure Update Manager**.
 
-   ![image](https://github.com/user-attachments/assets/191199c5-5916-4148-88f5-6f695189473f)
+![image](https://github.com/user-attachments/assets/191199c5-5916-4148-88f5-6f695189473f)
 
   
 3. Under **Resources**, select **Machines**, then choose the specific Arc-enabled machine.
