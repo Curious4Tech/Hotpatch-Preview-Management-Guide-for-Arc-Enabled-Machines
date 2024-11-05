@@ -153,7 +153,16 @@ After successful enrollment, you will see **Enable** as shown in the image below
 You can now install hotpatch (preview) updates by creating a **user-defined schedule** or performing a **one-time update** . There are two options:
 
 1. Install all available update classifications or limit the installation to security updates only.
+
+
+  ![image](https://github.com/user-attachments/assets/eb78b278-8f25-4ac4-a910-20ce17064837)
+
+   
 2. Specify individual hotpatch knowledge base IDs (KB IDs) if you need to install specific updates. You can enter multiple KB IDs for this process.
+
+
+   ![image](https://github.com/user-attachments/assets/862e70a7-41e7-44d1-a982-8cc25053b9e8)
+
 
 This process ensures that the hotpatch update, which does not require a reboot, is installed as part of your defined schedule or in a one-time update, making patch installation predictable.
 
