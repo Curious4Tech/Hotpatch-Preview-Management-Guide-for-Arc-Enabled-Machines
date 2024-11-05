@@ -98,6 +98,55 @@ You can verify again if enabled by running the previous command in PowerShell:
 ![image](https://github.com/user-attachments/assets/f610e0d0-d153-4019-8c1f-10c724d002d3)
 
 
+
+The Hyper-V is already installed, but the Host Guardian Service is available but not installed. 
+
+## Create and configure DeviceGuard registry settings
+
+Let's try installing the Host Guardian Service first, as it's related to VBS and security features:
+
+```
+Install-WindowsFeature -Name HostGuardianServiceRole
+```
+
+Then let's install the Host Guardian Hyper-V Support:
+
+```
+Install-WindowsFeature -Name HostGuardian
+```
+
+After those are installed, let's proceed with the registry modifications for VBS:
+
+```
+New-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Control\DeviceGuard" -Force
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\DeviceGuard" -Name "EnableVirtualizationBasedSecurity" -Value 1 -PropertyType DWORD -Force
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\DeviceGuard" -Name "RequirePlatformSecurityFeatures" -Value 1 -PropertyType DWORD -Force
+```
+
+![image](https://github.com/user-attachments/assets/fb890d09-26fa-4f57-9943-dca6911181cc)
+
+
+Let's verify your system's virtualization capabilities now:
+
+```
+systeminfo | findstr /i "virtualization"
+Get-ComputerInfo -Property "HyperV*"
+```
+
+![image](https://github.com/user-attachments/assets/11c8a9b6-4a4b-4a6c-9b53-a3bcfd82906f)
+
+
+Now, return to the Azure Portal and locate the Hotpatch option. Click on **Change** next to Hotpatch. A new window will appear—review the details, and then click on **Confirm** to activate Hotpatch.
+
+
+ ![image](https://github.com/user-attachments/assets/9b6bc1a4-39b5-4b04-bcef-04317075dcfc)
+ 
+
+ Please wait approximately **10 minutes** for the changes to take effect.
+
+ ![image](https://github.com/user-attachments/assets/da009411-1bed-49ac-84ae-6d95268c6a5e)
+
+
 You can now install hotpatch (preview) updates by creating a user-defined schedule or performing a one-time update. There are two options:
 
 1. Install all available update classifications or limit the installation to security updates only.
