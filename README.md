@@ -42,7 +42,8 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
 | **Pending**      | Interim status while enrollment is in progress.                      |
 
 
- ![image](https://github.com/user-attachments/assets/68aa57b3-6301-4d9e-8637-4ac9105dc6a9)
+![image](https://github.com/user-attachments/assets/481ff224-573a-4195-a3ee-1f4db37c4379)
+
 
 
 ## Checking Hotpatch Updates
