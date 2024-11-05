@@ -45,14 +45,6 @@ To view the hotpatch (preview) status of a single machine, follow these steps:
 ![image](https://github.com/user-attachments/assets/481ff224-573a-4195-a3ee-1f4db37c4379)
 
 
-
-## Checking Hotpatch Updates
-
-To check for the latest hotpatch updates, you can either enable **Periodic Assessment** or manually trigger an on-demand assessment:
-
-1. **Periodic Assessment**: Automatically checks for available updates, ensuring that all patches are detected. The results can be viewed on the **Recommended updates** tab, along with the time of the last assessment.
-2. **On-Demand Patch Assessment**: Trigger a manual check using the **Check for updates** option. You can view the reboot status of the updates in the assessment result under the **Reboot required** column.
-
 ## Installing Hotpatch Updates
 
 **Hotpatch Requirements**
@@ -169,6 +161,17 @@ This process ensures that the hotpatch update, which does not require a reboot, 
 ![image](https://github.com/user-attachments/assets/04947051-24eb-434b-8620-81264cc83f03)
 
 
+## Checking Hotpatch Updates
+
+To check for the latest hotpatch updates, you can either enable **Periodic Assessment** or manually trigger an on-demand assessment:
+
+1. **Periodic Assessment**: Automatically checks for available updates, ensuring that all patches are detected. The results can be viewed on the **Recommended updates** tab, along with the time of the last assessment.
+2. **On-Demand Patch Assessment**: Trigger a manual check using the **Check for updates** option. You can view the reboot status of the updates in the assessment result under the **Reboot required** column.
+
+
+ ![image](https://github.com/user-attachments/assets/3abd2515-5c39-4e07-b1ed-1cb6c1584a4e)
+
+
 ## Viewing Update History
 
 Atfer your first update, you can view the history of hotpatch deployments on your VM:
@@ -177,7 +180,8 @@ Atfer your first update, you can view the history of hotpatch deployments on you
 2. The **Update history** section shows patch installation details for the past 30 days, including reboot status for each update.
 
 
- ![image](https://github.com/user-attachments/assets/b3204a8f-79d5-4de8-8cbf-d691168c5000)
+ ![image](https://github.com/user-attachments/assets/a70b6944-0609-4ac0-af95-a5fe26e35a4d)
+
 
 ---
 
