@@ -169,10 +169,13 @@ This process ensures that the hotpatch update, which does not require a reboot, 
 
 ## Viewing Update History
 
-You can view the history of hotpatch deployments on your VM:
+Atfer your first update, you can view the history of hotpatch deployments on your VM:
 
 1. Navigate to the **History** option in the Azure portal.
 2. The **Update history** section shows patch installation details for the past 30 days, including reboot status for each update.
+
+
+ ![image](https://github.com/user-attachments/assets/b3204a8f-79d5-4de8-8cbf-d691168c5000)
 
 ---
 
