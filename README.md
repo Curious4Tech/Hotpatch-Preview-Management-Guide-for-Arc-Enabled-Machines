@@ -147,7 +147,7 @@ Now, return to the Azure Portal and locate the Hotpatch option. Click on **Chang
 After successful enrollment, you will see "Enabled" as shown in the image below:
 
 
-![image](https://github.com/user-attachments/assets/f6022388-1899-4af1-b7ae-d2fdf0bcf5c7)
+![image](https://github.com/user-attachments/assets/7c3a4186-7a05-4aee-be25-7b745d5c37da)
 
 
 You can now install hotpatch (preview) updates by creating a **user-defined schedule** or performing a **one-time update** . There are two options:
