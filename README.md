@@ -144,7 +144,7 @@ Now, return to the Azure Portal and locate the Hotpatch option. Click on **Chang
  ![image](https://github.com/user-attachments/assets/da009411-1bed-49ac-84ae-6d95268c6a5e)
 
 
-After successful enrollment, you will see "Enabled" as shown in the image below:
+After successful enrollment, you will see **Enable** as shown in the image below:
 
 
 ![image](https://github.com/user-attachments/assets/7c3a4186-7a05-4aee-be25-7b745d5c37da)
